@@ -1,1 +1,10 @@
-<button (click)="onClickMe()">Click me!</button>
+<div *ngFor="let el of elements">
+    <div class="elementMove"  [style.top.px]="el.GetYPos()" [style.left.px]="el.GetXPos()">
+        <app-element-comp [Element]="el">
+            
+            
+        </app-element-comp>
+    </div>
+</div>
+
+<!-- <app-element-comp [Element]="elements[0]"> </app-element-comp> -->

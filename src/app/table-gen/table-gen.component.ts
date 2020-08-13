@@ -16,6 +16,12 @@ export class TableGenComponent implements OnInit {
 
 
   constructor(private http: HttpClient) {
+    this.getDataFromFile();
+  }
+  
+
+  // Call this method in constructor
+  getDataFromFile(){
     this.getJSON().subscribe(data => {      
       // let datas = JSON.parse(data);
 
@@ -28,14 +34,14 @@ export class TableGenComponent implements OnInit {
         el.symbol = d.symbol;
         el.xpos = d.xpos;
         el.ypos = d.ypos;
+        el.description = d.description;
         
         this.elements.push(el);
       }
 
-      this.ShowList();
     });
   }
-  
+
   public getJSON(): Observable<any> {
     return this.http.get(this._jsonURL);
   

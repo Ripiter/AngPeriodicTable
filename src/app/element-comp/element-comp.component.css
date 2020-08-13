@@ -1,0 +1,67 @@
+/* color of each element */
+.alkali-metal{
+    background-color: #009B5A;
+}
+.alkaline-earth-metal{
+    background-color: #0065B4;
+}
+.lanthanide{
+    background-color: #EF3B98;
+}
+.post-transition-metal{
+    background-color: #FFCC01;
+}
+.transition-metal{
+    background-color: #512A93;
+}
+.actinide{
+    background-color: #E2C2CD;
+}
+.metalloid{
+    background-color: #0FBFD1;
+}
+.nonmetal{
+    background-color: #C4E0A6;
+}
+.hologen{
+    background-color: #FEDCB5;
+}
+.unknown{
+    background-color: #A6CF40;
+}
+.noble-gas{
+    background-color: #EE1338;
+}
+
+/* Shape of element */
+
+.elementComponent{
+    width: 85px;
+    height: 85px;
+    border: 1px solid;
+    padding: 5px;
+    color: black;
+}
+.elementName{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding-bottom: 0px;
+}
+.elementSymbol{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.elementMass{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.elementNumber{
+    padding-left: 30%;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.numberAndMass{
+    display: flex;
+}
