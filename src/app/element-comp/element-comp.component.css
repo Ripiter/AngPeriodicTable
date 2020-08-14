@@ -65,3 +65,6 @@
 .numberAndMass{
     display: flex;
 }
+.numberWidth{
+    width: 50%;
+}
